@@ -9,7 +9,7 @@ Engineering Student • Developer • Builder
 </p>
 
 <p align="center">
-I focus on building real things with code — not just learning syntax.<br>
+I focus on building real things with code — not just learning syntax.  
 Interested in clean logic, scalable systems, and products that actually work.
 </p>
 
@@ -45,26 +45,20 @@ Interested in clean logic, scalable systems, and products that actually work.
 
 ## 📌 What I Actually Do
 
-- Build frontend projects with HTML, CSS, JavaScript & React
-- Use Python & Java for logic and problem-solving
-- Turn ideas into working prototypes
-- Learn by shipping, breaking, and fixing
+- Build frontend projects using HTML, CSS, JavaScript & React  
+- Use Python & Java for logic and problem-solving  
+- Turn ideas into working prototypes  
+- Learn by shipping, breaking, and fixing  
 
 ---
 
 ## 📊 GitHub Performance
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ed6095-web&show_icons=true&theme=tokyonight&cache_seconds=86400"/>
-</p>
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ed6095-web&show_icons=true&theme=tokyonight)
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ed6095-web&layout=compact&theme=tokyonight&cache_seconds=86400"/>
-</p>
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ed6095-web&layout=compact&theme=tokyonight)
 
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=ed6095-web&theme=tokyonight"/>
-</p>
+![GitHub Streak](https://streak-stats.demolab.com?user=ed6095-web&theme=tokyonight)
 
 ⚠️ If these stats look weak, that’s feedback — not decoration.
 
