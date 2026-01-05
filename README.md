@@ -45,10 +45,10 @@ Interested in clean logic, scalable systems, and products that actually work.
 
 ## 📌 What I Do
 
-- Build frontend projects with HTML, CSS, JavaScript & React  
-- Use Python & Java for logic and problem-solving  
-- Turn ideas into working prototypes  
-- Learn by shipping, breaking, and fixing  
+- Build frontend projects with **HTML, CSS, JavaScript & React**
+- Use **Python & Java** for logic and problem-solving
+- Turn ideas into working prototypes
+- Learn by shipping, breaking, and fixing
 
 ---
 
