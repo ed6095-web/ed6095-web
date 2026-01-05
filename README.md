@@ -9,7 +9,7 @@ Engineering Student • Developer • Builder
 </p>
 
 <p align="center">
-I focus on building real things with code — not just learning syntax.  
+I focus on building real things with code — not just learning syntax.<br>
 Interested in clean logic, scalable systems, and products that actually work.
 </p>
 
@@ -39,28 +39,16 @@ Interested in clean logic, scalable systems, and products that actually work.
   <img src="https://skillicons.dev/icons?i=python,java,html,css,js,react,git,github,vscode" />
 </p>
 
-> Small honest stack > bloated fake one.
+> I prefer mastering fewer tools deeply rather than collecting buzzwords.
 
 ---
 
-## 📌 What I Actually Do
+## 📌 What I Do
 
-- Build frontend projects using HTML, CSS, JavaScript & React  
+- Build frontend projects with HTML, CSS, JavaScript & React  
 - Use Python & Java for logic and problem-solving  
 - Turn ideas into working prototypes  
 - Learn by shipping, breaking, and fixing  
-
----
-
-## 📊 GitHub Performance
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ed6095-web&show_icons=true&theme=tokyonight)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ed6095-web&layout=compact&theme=tokyonight)
-
-![GitHub Streak](https://streak-stats.demolab.com?user=ed6095-web&theme=tokyonight)
-
-⚠️ If these stats look weak, that’s feedback — not decoration.
 
 ---
 
