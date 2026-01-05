@@ -56,12 +56,12 @@ Interested in clean logic, scalable systems, and products that actually work.
 ## 📊 GitHub Performance
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=tokyonight" height="170"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=tokyonight" height="170"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=ed6095-web&show_icons=true&theme=tokyonight" height="170"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ed6095-web&layout=compact&theme=tokyonight" height="170"/>
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=YOUR_GITHUB_USERNAME&theme=tokyonight" />
+  <img src="https://streak-stats.demolab.com?user=ed6095-web&theme=tokyonight" />
 </p>
 
 ⚠️ If these stats look weak, that’s feedback — not decoration.
