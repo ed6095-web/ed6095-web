@@ -9,7 +9,7 @@ Engineering Student • Developer • Builder
 </p>
 
 <p align="center">
-I focus on building real things with code — not just learning syntax.  
+I focus on building real things with code — not just learning syntax.<br>
 Interested in clean logic, scalable systems, and products that actually work.
 </p>
 
@@ -26,7 +26,7 @@ Interested in clean logic, scalable systems, and products that actually work.
     <img src="https://skillicons.dev/icons?i=linkedin" height="40"/>
   </a>
   &nbsp;&nbsp;
-  <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank">
+  <a href="https://github.com/ed6095-web" target="_blank">
     <img src="https://skillicons.dev/icons?i=github" height="40"/>
   </a>
 </p>
@@ -39,29 +39,31 @@ Interested in clean logic, scalable systems, and products that actually work.
   <img src="https://skillicons.dev/icons?i=python,java,html,css,js,react,git,github,vscode" />
 </p>
 
-> Rule: If you stop using a technology, remove it.  
-> A smaller honest stack > a bloated fake one.
+> Small honest stack > bloated fake one.
 
 ---
 
 ## 📌 What I Actually Do
 
-- Build frontend projects with **HTML, CSS, JavaScript & React**
-- Use **Python & Java** for logic, problem-solving, and backend concepts
-- Turn ideas into working prototypes instead of endless planning
-- Learn by **shipping**, breaking, and fixing
+- Build frontend projects with HTML, CSS, JavaScript & React
+- Use Python & Java for logic and problem-solving
+- Turn ideas into working prototypes
+- Learn by shipping, breaking, and fixing
 
 ---
 
 ## 📊 GitHub Performance
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ed6095-web&show_icons=true&theme=tokyonight" height="170"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ed6095-web&layout=compact&theme=tokyonight" height="170"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=ed6095-web&show_icons=true&theme=tokyonight&cache_seconds=86400"/>
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=ed6095-web&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ed6095-web&layout=compact&theme=tokyonight&cache_seconds=86400"/>
+</p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=ed6095-web&theme=tokyonight"/>
 </p>
 
 ⚠️ If these stats look weak, that’s feedback — not decoration.
@@ -71,6 +73,6 @@ Interested in clean logic, scalable systems, and products that actually work.
 ## 🧠 Mindset
 
 ```txt
-Build > Talk  
-Consistency > Motivation  
-Execution > Ideas  
+Build > Talk
+Consistency > Motivation
+Execution > Ideas
