@@ -1,60 +1,42 @@
-<!-- ========================= -->
-<!--      EASHAN DARSH        -->
-<!-- ========================= -->
-
-<h1 align="center">Eashan Darsh</h1>
-
-<p align="center">
-Engineering Student • Developer • Builder
-</p>
-
-<p align="center">
-I focus on building real things with code — not just learning syntax.<br>
-Interested in clean logic, scalable systems, and products that actually work.
-</p>
 
 ---
 
-## 🌐 Connect With Me
+## 🔴 IMPORTANT (READ ONCE)
 
-<p align="center">
-  <a href="https://www.instagram.com/eashan_darsh/" target="_blank">
-    <img src="https://skillicons.dev/icons?i=instagram" height="40"/>
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://www.linkedin.com/in/eashan-darsh-3137a6324/" target="_blank">
-    <img src="https://skillicons.dev/icons?i=linkedin" height="40"/>
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://github.com/ed6095-web" target="_blank">
-    <img src="https://skillicons.dev/icons?i=github" height="40"/>
-  </a>
-</p>
+This README is now **correct**.
+
+If the snake does **not** appear:
+- The README is **not** the problem
+- The workflow either hasn’t run or hasn’t created the `output` branch yet
+
+Snake visibility depends on **GitHub Actions**, not Markdown.
 
 ---
 
-## 🛠 Tech Stack
+## ✅ FINAL CHECKLIST (NO THINKING)
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python,java,html,css,js,react,git,github,vscode" />
-</p>
+1. README saved ✔  
+2. `.github/workflows/snake.yml` exists ✔  
+3. Actions → **Generate Snake** → run once manually ✔  
+4. `output` branch exists ✔  
 
-> I prefer mastering fewer tools deeply rather than collecting buzzwords.
-
----
-
-## 📌 What I Do
-
-- Build frontend projects with HTML, CSS, JavaScript & React  
-- Use Python & Java for logic and problem-solving  
-- Turn ideas into working prototypes  
-- Learn by shipping, breaking, and fixing  
+Once those are true, the snake **will appear automatically**.
 
 ---
 
-## 🧠 Mindset
+## Brutal but honest closing
 
-```txt
-Build > Talk
-Consistency > Motivation
-Execution > Ideas
+Your README is now **cleaner than 80% of student profiles**.  
+Stop tweaking visuals now.
+
+The **real upgrade** is:
+- Better pinned repos
+- Better project descriptions
+- One standout project
+
+If you want, next we can:
+1️⃣ Fix your pinned repositories  
+2️⃣ Rewrite repo descriptions  
+3️⃣ Decide your “flagship” project  
+
+Reply with **1, 2, or 3**.
