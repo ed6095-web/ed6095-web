@@ -1,1 +1,3 @@
-![Snake](https://raw.githubusercontent.com/ed6095-web/ed6095-web/output/dist/snake.svg?cachebust=1)
+## 🐍 Contribution Snake
+
+![Snake](https://github.com/ed6095-web/ed6095-web/blob/output/dist/snake.svg?raw=true)
