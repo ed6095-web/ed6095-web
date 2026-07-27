@@ -1,0 +1,259 @@
+<svg width="900" height="280" viewBox="0 0 900 280" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D1117;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0D1520;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0D1117;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Primary glow gradient -->
+    <radialGradient id="glowCenter" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#58A6FF;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#58A6FF;stop-opacity:0" />
+    </radialGradient>
+
+    <!-- Green accent glow -->
+    <radialGradient id="glowGreen" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#22C55E;stop-opacity:0.12" />
+      <stop offset="100%" style="stop-color:#22C55E;stop-opacity:0" />
+    </radialGradient>
+
+    <!-- Text gradient for name -->
+    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F8FAFC">
+        <animate attributeName="stop-color" values="#F8FAFC;#58A6FF;#F8FAFC" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" style="stop-color:#58A6FF">
+        <animate attributeName="stop-color" values="#58A6FF;#F8FAFC;#58A6FF" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#F8FAFC">
+        <animate attributeName="stop-color" values="#F8FAFC;#58A6FF;#F8FAFC" dur="4s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Role gradient -->
+    <linearGradient id="roleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22C55E"/>
+      <stop offset="100%" style="stop-color:#58A6FF"/>
+    </linearGradient>
+
+    <!-- Border gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#58A6FF;stop-opacity:0.6">
+        <animate attributeName="stop-opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" style="stop-color:#22C55E;stop-opacity:0.4">
+        <animate attributeName="stop-opacity" values="0.4;0.8;0.4" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#58A6FF;stop-opacity:0.6">
+        <animate attributeName="stop-opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Grid pattern -->
+    <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#58A6FF" stroke-width="0.3" opacity="0.15"/>
+    </pattern>
+
+    <!-- Glow filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Strong glow filter -->
+    <filter id="strongGlow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Particle glow -->
+    <filter id="particleGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="roundedClip">
+      <rect width="900" height="280" rx="16" ry="16"/>
+    </clipPath>
+  </defs>
+
+  <!-- Clipped group for rounded corners -->
+  <g clip-path="url(#roundedClip)">
+
+    <!-- Background -->
+    <rect width="900" height="280" fill="url(#bgGrad)"/>
+
+    <!-- Grid overlay -->
+    <rect width="900" height="280" fill="url(#grid)"/>
+
+    <!-- Center glow blob -->
+    <ellipse cx="450" cy="140" rx="320" ry="160" fill="url(#glowCenter)">
+      <animate attributeName="rx" values="320;360;320" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="ry" values="160;180;160" dur="6s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Left green glow -->
+    <ellipse cx="120" cy="80" rx="150" ry="100" fill="url(#glowGreen)" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;0.8;0.5" dur="5s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- Right blue glow -->
+    <ellipse cx="780" cy="200" rx="150" ry="100" fill="url(#glowCenter)" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.9;0.6" dur="4s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- ===== PARTICLES ===== -->
+    <!-- Particle 1 -->
+    <circle cx="80" cy="60" r="2.5" fill="#58A6FF" opacity="0.8" filter="url(#particleGlow)">
+      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="3.2s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0;5,-8;0,0" dur="3.2s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Particle 2 -->
+    <circle cx="820" cy="50" r="2" fill="#22C55E" opacity="0.7" filter="url(#particleGlow)">
+      <animate attributeName="opacity" values="0.7;0.1;0.7" dur="4s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0;-6,10;0,0" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Particle 3 -->
+    <circle cx="150" cy="220" r="1.8" fill="#58A6FF" opacity="0.6" filter="url(#particleGlow)">
+      <animate attributeName="opacity" values="0.6;0.9;0.6" dur="2.8s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0;8,5;0,0" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Particle 4 -->
+    <circle cx="760" cy="230" r="3" fill="#58A6FF" opacity="0.5" filter="url(#particleGlow)">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="5s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0;-10,-6;0,0" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Particle 5 -->
+    <circle cx="50" cy="160" r="1.5" fill="#22C55E" opacity="0.9" filter="url(#particleGlow)">
+      <animate attributeName="opacity" values="0.9;0.3;0.9" dur="3.6s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Particle 6 -->
+    <circle cx="850" cy="130" r="2.2" fill="#22C55E" opacity="0.7" filter="url(#particleGlow)">
+      <animate attributeName="opacity" values="0.7;0.2;0.7" dur="4.2s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0;5,-12;0,0" dur="4.2s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Particle 7 -->
+    <circle cx="380" cy="30" r="1.8" fill="#58A6FF" opacity="0.5" filter="url(#particleGlow)">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" values="0,0;3,8;0,0" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Particle 8 -->
+    <circle cx="560" cy="255" r="2" fill="#22C55E" opacity="0.6" filter="url(#particleGlow)">
+      <animate attributeName="opacity" values="0.6;0.1;0.6" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Particle 9 -->
+    <circle cx="250" cy="40" r="1.5" fill="#8B949E" opacity="0.4" filter="url(#particleGlow)">
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="5.5s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Particle 10 -->
+    <circle cx="680" cy="260" r="1.8" fill="#58A6FF" opacity="0.5" filter="url(#particleGlow)">
+      <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3.8s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Particle 11 -->
+    <circle cx="450" cy="20" r="2.5" fill="#22C55E" opacity="0.3" filter="url(#particleGlow)">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Particle 12 -->
+    <circle cx="30" cy="250" r="2" fill="#58A6FF" opacity="0.6" filter="url(#particleGlow)">
+      <animate attributeName="opacity" values="0.6;0.1;0.6" dur="3.4s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Floating dots - grid style -->
+    <circle cx="200" cy="140" r="1.2" fill="#58A6FF" opacity="0.3">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="700" cy="100" r="1.2" fill="#22C55E" opacity="0.3">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="320" cy="240" r="1.2" fill="#58A6FF" opacity="0.25">
+      <animate attributeName="opacity" values="0.25;0.6;0.25" dur="4s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Horizontal line accents -->
+    <line x1="0" y1="1" x2="900" y2="1" stroke="url(#borderGrad)" stroke-width="1.5"/>
+    <line x1="0" y1="279" x2="900" y2="279" stroke="url(#borderGrad)" stroke-width="1.5"/>
+
+    <!-- Small corner decorations -->
+    <g opacity="0.6">
+      <!-- Top-left corner -->
+      <path d="M20,20 L50,20" stroke="#58A6FF" stroke-width="1.5" fill="none"/>
+      <path d="M20,20 L20,50" stroke="#58A6FF" stroke-width="1.5" fill="none"/>
+      <!-- Top-right corner -->
+      <path d="M850,20 L880,20" stroke="#22C55E" stroke-width="1.5" fill="none"/>
+      <path d="M880,20 L880,50" stroke="#22C55E" stroke-width="1.5" fill="none"/>
+      <!-- Bottom-left corner -->
+      <path d="M20,260 L50,260" stroke="#22C55E" stroke-width="1.5" fill="none"/>
+      <path d="M20,230 L20,260" stroke="#22C55E" stroke-width="1.5" fill="none"/>
+      <!-- Bottom-right corner -->
+      <path d="M850,260 L880,260" stroke="#58A6FF" stroke-width="1.5" fill="none"/>
+      <path d="M880,230 L880,260" stroke="#58A6FF" stroke-width="1.5" fill="none"/>
+    </g>
+
+    <!-- ===== MAIN TEXT CONTENT ===== -->
+
+    <!-- Greeting tag -->
+    <rect x="330" y="38" width="240" height="26" rx="13" fill="#58A6FF" fill-opacity="0.1" stroke="#58A6FF" stroke-width="0.8" stroke-opacity="0.5"/>
+    <text x="450" y="56" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="11.5" fill="#58A6FF" text-anchor="middle" letter-spacing="2.5" font-weight="500">
+      ✦  OPEN TO COLLABORATE  ✦
+    </text>
+
+    <!-- Main Name -->
+    <text x="450" y="118" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="58" font-weight="800" text-anchor="middle" fill="url(#nameGrad)" filter="url(#glow)" letter-spacing="-1">
+      EASHAN DARSH
+    </text>
+
+    <!-- Subtitle roles -->
+    <text x="450" y="152" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="16" text-anchor="middle" fill="url(#roleGrad)" font-weight="600" letter-spacing="1">
+      AI Engineer  ·  Full Stack Developer  ·  Computer Vision
+      <animate attributeName="opacity" values="1;0.7;1" dur="3s" repeatCount="indefinite"/>
+    </text>
+
+    <!-- University line -->
+    <text x="450" y="183" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="12.5" text-anchor="middle" fill="#8B949E" letter-spacing="0.5">
+      SRM Institute of Science and Technology  ·  India
+    </text>
+
+    <!-- Divider line -->
+    <line x1="310" y1="200" x2="590" y2="200" stroke="#58A6FF" stroke-width="0.6" stroke-opacity="0.3"/>
+
+    <!-- Status indicators -->
+    <g transform="translate(220, 218)">
+      <!-- Building indicator -->
+      <circle cx="0" cy="0" r="4" fill="#22C55E">
+        <animate attributeName="r" values="4;6;4" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <text x="12" y="5" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="12" fill="#8B949E">Building AI-powered products</text>
+    </g>
+
+    <g transform="translate(520, 218)">
+      <circle cx="0" cy="0" r="4" fill="#58A6FF">
+        <animate attributeName="r" values="4;6;4" dur="2.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0.4;1" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+      <text x="12" y="5" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="12" fill="#8B949E">India 🇮🇳</text>
+    </g>
+
+    <!-- Bottom tagline -->
+    <text x="450" y="255" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="11" text-anchor="middle" fill="#8B949E" letter-spacing="3" opacity="0.7">
+      PRACTICAL AI · REAL SOLUTIONS · CONTINUOUS LEARNING
+    </text>
+
+  </g>
+
+  <!-- Rounded border overlay -->
+  <rect width="900" height="280" rx="16" ry="16" fill="none" stroke="url(#borderGrad)" stroke-width="1.5"/>
+
+</svg>
