@@ -304,9 +304,9 @@ Currently in development ...
 <br/>
 
 <!-- Row 1: Stats + Languages -->
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=ed6095-web&show_icons=true&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=3FB950&text_color=F0F6FC&count_private=true&include_all_commits=true" alt="GitHub Stats" />
+<img height="165" src="https://github-readme-stats-anuraghazra.vercel.app/api?username=ed6095-web&show_icons=true&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=3FB950&text_color=F0F6FC&count_private=true" alt="GitHub Stats" />
 &nbsp;&nbsp;
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ed6095-web&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=F0F6FC&langs_count=8" alt="Top Languages" />
+<img height="165" src="https://github-readme-stats-anuraghazra.vercel.app/api/top-langs/?username=ed6095-web&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=F0F6FC&langs_count=8" alt="Top Languages" />
 
 <br/><br/>
 
