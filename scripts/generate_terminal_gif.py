@@ -23,7 +23,7 @@ import argparse
 from pathlib import Path
 
 try:
-    from PIL import Image, ImageDraw, ImageFont, ImageFilter
+    from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageEnhance
 except ImportError:
     print("Error: Pillow not installed. Run: pip install Pillow")
     sys.exit(1)
@@ -83,43 +83,62 @@ def load_font(size: int):
 
 # ─── ASCII Art Generation ────────────────────────────────────────────────────
 
-def photo_to_ascii(photo_path: str, width: int = 55, height: int = 28) -> list[str]:
-    """Convert a photo to ASCII art lines."""
-    img = Image.open(photo_path).convert("L")  # grayscale
-
-    # Crop to face region (top 75%)
+def photo_to_ascii(photo_path: str, width: int = 36, height: int = 28) -> list[str]:
+    """Convert photo to clean, sharp ASCII art with edge detection and background removal."""
+    img = Image.open(photo_path).convert("L")
     w, h = img.size
-    img = img.crop((0, 0, w, int(h * 0.88)))
-
-    # Resize keeping aspect
-    aspect = img.height / img.width
-    new_h = int(width * aspect * 0.45)  # correct for char aspect ratio
-    new_h = max(new_h, height)
-    img = img.resize((width, new_h), Image.LANCZOS)
-
-    # Crop/pad to target height
-    if new_h > height:
-        top = (new_h - height) // 2
-        img = img.crop((0, top, width, top + height))
     
-    # Apply mild contrast enhancement
-    from PIL import ImageEnhance
-    img = ImageEnhance.Contrast(img).enhance(1.4)
-    img = ImageEnhance.Sharpness(img).enhance(1.2)
-
-    chars = "@#%&BWMoahkbdqwmZO0LCJUYXzcvunxrjft/\\|()1{}?-_+~<>i!lI;:,. "
-    chars_len = len(chars)
-
+    # Crop to head and upper body (top 92%)
+    crop_box = (int(w * 0.10), int(h * 0.02), int(w * 0.90), int(h * 0.92))
+    img = img.crop(crop_box)
+    
+    # Resize with correct aspect ratio for terminal font
+    img_resized = img.resize((width, height), Image.LANCZOS)
+    
+    # Enhance contrast & sharpness
+    img_contrast = ImageEnhance.Contrast(img_resized).enhance(2.0)
+    img_sharp = ImageEnhance.Sharpness(img_contrast).enhance(1.8)
+    
+    # Find edges for facial feature sharpness (glasses, eyes, nose, mustache)
+    edges = img_resized.filter(ImageFilter.FIND_EDGES)
+    try:
+        edges_data = list(edges.get_flattened_data())
+        pixels = list(img_sharp.get_flattened_data())
+    except AttributeError:
+        edges_data = list(edges.getdata())
+        pixels = list(img_sharp.getdata())
+        
     lines = []
-    pixels = list(img.getdata())
-    for row in range(height):
-        line = ""
-        for col in range(width):
-            brightness = pixels[row * width + col]
-            idx = int(brightness / 255 * (chars_len - 1))
-            line += chars[idx]
-        lines.append(line)
+    for r in range(height):
+        row = ""
+        for c in range(width):
+            idx = r * width + c
+            p_val = pixels[idx]
+            e_val = edges_data[idx]
+            
+            # Clean background removal (>175 luminance with weak edge -> blank space)
+            if p_val > 175 and e_val < 30:
+                row += " "
+            elif e_val > 70 and p_val < 150:
+                # Strong feature edge (glasses frame, facial contours)
+                row += "#"
+            elif p_val < 35:
+                row += "@"
+            elif p_val < 65:
+                row += "%"
+            elif p_val < 95:
+                row += "▓"
+            elif p_val < 125:
+                row += "▒"
+            elif p_val < 150:
+                row += "░"
+            elif p_val < 175:
+                row += "-"
+            else:
+                row += " "
+        lines.append(row)
     return lines
+
 
 
 def placeholder_ascii() -> list[str]:
