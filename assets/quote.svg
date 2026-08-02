@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="136" viewBox="0 0 780 136">
+  <defs>
+    <style>
+      .bg    { fill: #161b22; }
+      .border{ stroke: #30363d; stroke-width:1; fill:none; }
+      .prompt{ font-family: 'Courier New', 'JetBrains Mono', monospace; }
+      .green { fill: #3FB950; }
+      .blue  { fill: #58A6FF; }
+      .muted { fill: #8B949E; }
+      .white { fill: #F0F6FC; }
+      @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+      .cursor{ animation: blink 1.2s step-end infinite; fill: #3FB950; }
+    </style>
+  </defs>
+  <rect width="780" height="136" rx="8" class="bg"/>
+  <rect width="780" height="136" rx="8" class="border"/>
+  <rect width="780" height="26" rx="8" fill="#21262d"/>
+  <rect y="18" width="780" height="8" fill="#21262d"/>
+  <line x1="0" y1="26" x2="780" y2="26" stroke="#30363d" stroke-width="1"/>
+  <circle cx="16" cy="13" r="5" fill="#FF5F56"/>
+  <circle cx="34" cy="13" r="5" fill="#FFBD2E"/>
+  <circle cx="52" cy="13" r="5" fill="#27C93F"/>
+  <text x="390" y="17" text-anchor="middle" class="prompt muted" font-size="11">quote.md</text>
+  <text x="16" y="48" class="prompt" font-size="13">
+    <tspan class="green">ed6095-web</tspan><tspan class="muted">@github</tspan><tspan class="muted">:~$ </tspan><tspan class="blue">cat</tspan><tspan class="white"> quote.md</tspan>
+  </text>
+  <text x="16" y="68" class="prompt white" font-size="13">&quot;Talk is cheap. Show me the code.&quot;</text>
+  <text x="16" y="104" class="prompt muted" font-size="12">  — Linus Torvalds</text>
+  <text x="16" y="124" class="prompt" font-size="12"><tspan class="green">ed6095-web</tspan><tspan class="muted">@github</tspan><tspan class="muted">:~$ </tspan><tspan class="cursor">█</tspan></text>
+</svg>

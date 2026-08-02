@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="60" viewBox="0 0 900 60">
+  <rect width="900" height="60" fill="#0D1117"/>
+  <!-- Matrix rain columns -->
+  <defs>
+    <style>
+      .mc { font-family: 'Courier New', monospace; font-size: 11px; fill: #3FB950; }
+      .mc-dim { font-family: 'Courier New', monospace; font-size: 11px; fill: #1a5928; }
+      @keyframes fall1 { 0%{opacity:0;transform:translateY(-20px)} 20%{opacity:1} 80%{opacity:1} 100%{opacity:0;transform:translateY(60px)} }
+      @keyframes fall2 { 0%{opacity:0;transform:translateY(-10px)} 30%{opacity:0.7} 70%{opacity:0.7} 100%{opacity:0;transform:translateY(70px)} }
+      @keyframes fall3 { 0%{opacity:0;transform:translateY(0px)} 25%{opacity:0.5} 75%{opacity:0.5} 100%{opacity:0;transform:translateY(60px)} }
+      @keyframes pulse { 0%,100%{opacity:0.3} 50%{opacity:1} }
+    </style>
+  </defs>
+
+  <!-- Animated matrix characters -->
+  <g class="mc" style="animation: fall1 2.1s ease-in-out infinite 0.0s">
+    <text x="20"  y="20">1</text><text x="20"  y="35">0</text><text x="20"  y="50">1</text>
+  </g>
+  <g class="mc-dim" style="animation: fall2 2.4s ease-in-out infinite 0.2s">
+    <text x="50"  y="15">0</text><text x="50"  y="30">1</text><text x="50"  y="45">0</text>
+  </g>
+  <g class="mc" style="animation: fall3 1.9s ease-in-out infinite 0.5s">
+    <text x="80"  y="25">1</text><text x="80"  y="40">1</text><text x="80"  y="55">0</text>
+  </g>
+  <g class="mc-dim" style="animation: fall1 2.6s ease-in-out infinite 0.1s">
+    <text x="120" y="10">0</text><text x="120" y="25">1</text><text x="120" y="40">0</text>
+  </g>
+  <g class="mc" style="animation: fall2 2.0s ease-in-out infinite 0.7s">
+    <text x="160" y="20">1</text><text x="160" y="35">0</text><text x="160" y="50">1</text>
+  </g>
+  <g class="mc-dim" style="animation: fall3 2.3s ease-in-out infinite 0.3s">
+    <text x="200" y="15">0</text><text x="200" y="30">1</text><text x="200" y="45">0</text>
+  </g>
+  <g class="mc" style="animation: fall1 2.1s ease-in-out infinite 0.9s">
+    <text x="240" y="25">1</text><text x="240" y="40">0</text><text x="240" y="55">1</text>
+  </g>
+  <g class="mc-dim" style="animation: fall2 1.8s ease-in-out infinite 0.4s">
+    <text x="280" y="12">0</text><text x="280" y="27">1</text><text x="280" y="42">0</text>
+  </g>
+  <g class="mc" style="animation: fall3 2.5s ease-in-out infinite 0.6s">
+    <text x="320" y="20">1</text><text x="320" y="35">1</text><text x="320" y="50">0</text>
+  </g>
+  <g class="mc-dim" style="animation: fall1 2.2s ease-in-out infinite 0.8s">
+    <text x="360" y="18">0</text><text x="360" y="33">0</text><text x="360" y="48">1</text>
+  </g>
+  <g class="mc" style="animation: fall2 2.0s ease-in-out infinite 0.2s">
+    <text x="400" y="22">1</text><text x="400" y="37">0</text><text x="400" y="52">1</text>
+  </g>
+  <g class="mc-dim" style="animation: fall3 2.4s ease-in-out infinite 0.5s">
+    <text x="440" y="14">0</text><text x="440" y="29">1</text><text x="440" y="44">0</text>
+  </g>
+  <g class="mc" style="animation: fall1 1.9s ease-in-out infinite 0.7s">
+    <text x="480" y="24">1</text><text x="480" y="39">0</text><text x="480" y="54">1</text>
+  </g>
+  <g class="mc-dim" style="animation: fall2 2.3s ease-in-out infinite 0.1s">
+    <text x="520" y="16">0</text><text x="520" y="31">1</text><text x="520" y="46">0</text>
+  </g>
+  <g class="mc" style="animation: fall3 2.1s ease-in-out infinite 0.9s">
+    <text x="560" y="20">1</text><text x="560" y="35">1</text><text x="560" y="50">0</text>
+  </g>
+  <g class="mc-dim" style="animation: fall1 2.6s ease-in-out infinite 0.3s">
+    <text x="600" y="12">0</text><text x="600" y="27">0</text><text x="600" y="42">1</text>
+  </g>
+  <g class="mc" style="animation: fall2 2.0s ease-in-out infinite 0.6s">
+    <text x="640" y="22">1</text><text x="640" y="37">0</text><text x="640" y="52">1</text>
+  </g>
+  <g class="mc-dim" style="animation: fall3 1.8s ease-in-out infinite 0.4s">
+    <text x="680" y="18">0</text><text x="680" y="33">1</text><text x="680" y="48">0</text>
+  </g>
+  <g class="mc" style="animation: fall1 2.4s ease-in-out infinite 0.8s">
+    <text x="720" y="24">1</text><text x="720" y="39">0</text><text x="720" y="54">1</text>
+  </g>
+  <g class="mc-dim" style="animation: fall2 2.2s ease-in-out infinite 0.0s">
+    <text x="760" y="14">0</text><text x="760" y="29">1</text><text x="760" y="44">0</text>
+  </g>
+  <g class="mc" style="animation: fall3 2.0s ease-in-out infinite 0.5s">
+    <text x="800" y="20">1</text><text x="800" y="35">0</text><text x="800" y="50">1</text>
+  </g>
+  <g class="mc-dim" style="animation: fall1 2.5s ease-in-out infinite 0.2s">
+    <text x="840" y="16">0</text><text x="840" y="31">1</text><text x="840" y="46">0</text>
+  </g>
+  <g class="mc" style="animation: fall2 1.9s ease-in-out infinite 0.7s">
+    <text x="880" y="22">1</text><text x="880" y="37">1</text><text x="880" y="52">0</text>
+  </g>
+
+  <!-- Center scan line -->
+  <rect width="900" height="1" y="30" fill="#3FB950" opacity="0.15" style="animation: pulse 3s ease-in-out infinite"/>
+
+  <!-- Fade edges -->
+  <defs>
+    <linearGradient id="fade-l" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"  stop-color="#0D1117" stop-opacity="1"/>
+      <stop offset="15%" stop-color="#0D1117" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="fade-r" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="85%" stop-color="#0D1117" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="60" fill="url(#fade-l)"/>
+  <rect width="900" height="60" fill="url(#fade-r)"/>
+</svg>

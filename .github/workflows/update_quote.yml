@@ -1,0 +1,33 @@
+name: Rotate Dev Quote
+
+on:
+  schedule:
+    - cron: '0 0 * * *'   # Runs daily at 00:00 UTC
+  workflow_dispatch:        # Manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  rotate-quote:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install Pillow
+
+      - name: Rotate Quote SVG
+        run: python scripts/rotate_quote.py
+
+      - name: Commit updated quote
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: rotate daily dev quote [skip ci]'
+          file_pattern: 'assets/quote.svg'
