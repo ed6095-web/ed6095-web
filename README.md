@@ -40,7 +40,7 @@
   Role        :  Engineering Student  ·  Backend Developer
   Education   :  B.Tech Computer Science Engineering  (AI & ML)
   Focus       :  Backend Development  ·  System Design  ·  AI
-  OS          :  Linux
+  OS          :  Windows
   Editor      :  VS Code
   Location    :  Chennai, Tamil Nadu, India
   Arch        :  x86_64
