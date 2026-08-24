@@ -24,7 +24,7 @@
   <text x="16" y="48" class="prompt" font-size="13">
     <tspan class="green">ed6095-web</tspan><tspan class="muted">@github</tspan><tspan class="muted">:~$ </tspan><tspan class="blue">cat</tspan><tspan class="white"> quote.md</tspan>
   </text>
-  <text x="16" y="68" class="prompt white" font-size="13">&quot;Simplicity is the soul of efficiency.&quot;</text>
-  <text x="16" y="104" class="prompt muted" font-size="12">  — Austin Freeman</text>
+  <text x="16" y="68" class="prompt white" font-size="13">&quot;The best code is no code at all.&quot;</text>
+  <text x="16" y="104" class="prompt muted" font-size="12">  — Jeff Atwood</text>
   <text x="16" y="124" class="prompt" font-size="12"><tspan class="green">ed6095-web</tspan><tspan class="muted">@github</tspan><tspan class="muted">:~$ </tspan><tspan class="cursor">█</tspan></text>
 </svg>
