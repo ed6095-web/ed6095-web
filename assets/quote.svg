@@ -24,8 +24,8 @@
   <text x="16" y="48" class="prompt" font-size="13">
     <tspan class="green">ed6095-web</tspan><tspan class="muted">@github</tspan><tspan class="muted">:~$ </tspan><tspan class="blue">cat</tspan><tspan class="white"> quote.md</tspan>
   </text>
-  <text x="16" y="68" class="prompt white" font-size="13">&quot;Programs must be written for people to read, and only</text>
-  <text x="16" y="90" class="prompt white" font-size="13">incidentally for machines to execute.&quot;</text>
-  <text x="16" y="126" class="prompt muted" font-size="12">  — Abelson &amp; Sussman</text>
+  <text x="16" y="68" class="prompt white" font-size="13">&quot;Software is a great combination of artistry and</text>
+  <text x="16" y="90" class="prompt white" font-size="13">engineering.&quot;</text>
+  <text x="16" y="126" class="prompt muted" font-size="12">  — Bill Gates</text>
   <text x="16" y="146" class="prompt" font-size="12"><tspan class="green">ed6095-web</tspan><tspan class="muted">@github</tspan><tspan class="muted">:~$ </tspan><tspan class="cursor">█</tspan></text>
 </svg>
